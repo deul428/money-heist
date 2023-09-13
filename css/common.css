@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@100;300;400;700;900&display=swap');
+
+html,body { width: 100%; height: 100%; margin:0px; padding:0px;overflow:hidden; font-family: 'Lato', sans-serif; font-weight: 400; transition: all 0.15s ease-in-out; }
+
+input, select, textarea, option { font-family: 'Lato', sans-serif; }
+h1,h2,h3,h4,h5,h6{ position: relative; }
+
+h1{ font-family: 'Anton', sans-serif; font-size: 180px; text-transform: uppercase; letter-spacing: 0.975px;  color: transparent; -webkit-text-stroke: 2px #cc0018; }
+
+h2{ font-family: 'Anton', sans-serif; font-size: 180px; text-transform: uppercase; letter-spacing: 0.975px;  color: transparent; -webkit-text-stroke: 2px #cc0018; }
+h3{ font-family: 'Lato', sans-serif; font-size: 25px; font-weight: 300; text-transform: uppercase; letter-spacing: 0.95px; color: #eee; }
+h4{ margin-top: 32px; line-height: 1.1; font-size: 14px; color: #eee; text-indent: 1em; }
+h5{ font-size: 16px; font-weight: 500; text-transform: uppercase; } 
+h6{}
+
+
+ul, li{ margin: 0; padding: 0; list-style: none; }
+
+.width_con{ position: absolute; width: 1200px; height: 600px; top: 50%; left: 50%; margin: -300px 0 0 -600px; background: rgba(255, 255, 255, 0.2); }
+
+/* ======================== ui area ======================== */
+.ui_guide { background: rgba(255, 255, 255, 0.2); position: fixed; z-index: 10; top: 30px; left: 60px; width: calc(100% - 120px); height: calc(100% - 60px);
+display: none; }
+    
+#ui{ position: fixed;z-index: 999;width: 100%;height: 100%; }
+
+#header { position: fixed;z-index: 999; top:0; left: 0; width: 100%; height: 25px; margin-top: 30px; }
+#header .logo_con{ position:absolute; left: 60px; width: 157px; }
+#header .logo_con a.logo img{ width: 100%; }
+
+#header ul.nav_con{ position: fixed; right: 60px; vertical-align: middle; margin-right: -4px; }
+#header ul.nav_con li{ float: left; padding: 4px; margin-left: 25px; cursor: pointer; }
+#header ul.nav_con li.on{ cursor: default; }
+#header ul.nav_con li.on a{ color: red; }
+#header ul.nav_con li a{ text-transform: uppercase; font-weight: 400; font-size: 16px; color: #fff; }
+#header ul.nav_con li:hover a{ cursor: pointer; }
+
+#side_left { position: absolute;z-index: 999;top: 50%;left: 60px;transform: translateY(-50%);width: 20px; }
+#side_left ul {}
+#side_left ul li { margin: 25px 0px; text-align: center; }
+#side_left ul li i { font-size: 16px; color: #fff; }
+#side_left ul li:nth-child(1) i{ font-size: 22px; }
+#side_left ul li:nth-child(2) i{ font-size: 20px; }
+
+#btm { position: fixed; z-index: 999; width: 100%; bottom: 30px; }
+#btm > * { position: absolute; bottom: 0; }
+#btm a { left: 60px; width: 25px; }
+#btm a img{ width: 100%; }
+
+/* ====================== ui area done ====================== */
+
+.quick { position:fixed; right:60px; top:50%; transform:translateY(-50%); z-index: 999; }
+.quick li { width:10px; height:10px; margin-bottom:10px;  border-radius:15px; background:#770411; cursor:pointer; transition: background 0.15s linear; }
+.quick .on { background:#cc0018; }
+.quick li:hover{ background: #cc0018; }
+
+.quick li.synopsDot { background: #eee; }
+.quick li.synopsDot.on { background: #ff2c45; }
+
+.pagination{ position: fixed; bottom: 30px; right:60px; z-index: 999999; color: #fff; font-weight: 300; font-size: 20px; }
+.pagination b{ color: #cc0018; font-weight: 700; font-size: 40px; }
+.pagination span {}
